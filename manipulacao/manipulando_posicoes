@@ -1,0 +1,11 @@
+// Retornando ou definindo a posição de um elemento
+/* $('form .field:eq(1)').offset({
+top: 5,
+left: 100
+}) */
+
+// Retorna apenas a posição de um elemento se baseando no elemento pai
+// $('form .field:eq(1)').position()
+
+// Retorna ou define a posição da barra de rolagem
+// $(document).scrollTop(400)
