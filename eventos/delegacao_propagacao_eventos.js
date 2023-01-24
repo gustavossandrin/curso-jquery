@@ -13,3 +13,15 @@ $('#btn_add_book').on('click', function(){
 
         $('#books_list tbody').append(tr);
     });
+
+
+// Parando a propagação de eventos
+$('#form_login').on('change', '[name]', function(){
+    alert('elemento mudou. Seu valor: ' + $(this).val());
+})
+
+$('#form_login [name=bio]').on('change', function(event){
+    event.stopPropagation();
+    $(this).css('background', 'red');
+
+})    
